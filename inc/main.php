@@ -199,12 +199,12 @@ function rocket_activation() {
 	rocket_generate_advanced_cache_file();
 
 	// Update customer key & licence.
-	wp_remote_get(
+	/*wp_remote_get(
 		WP_ROCKET_WEB_API . 'activate-licence.php',
 		[
 			'blocking' => false,
 		]
-	);
+	);*/
 
 	wp_remote_get(
 		home_url(),
