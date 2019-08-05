@@ -75,6 +75,7 @@ return array(
     'WP_Rocket\\ServiceProvider\\Preload_Subscribers' => $baseDir . '/inc/classes/ServiceProvider/class-preload-subscribers.php',
     'WP_Rocket\\ServiceProvider\\Settings' => $baseDir . '/inc/classes/ServiceProvider/class-settings.php',
     'WP_Rocket\\ServiceProvider\\Third_Party_Subscribers' => $baseDir . '/inc/classes/ServiceProvider/class-third-party-subscribers.php',
+    'WP_Rocket\\ServiceProvider\\Updater_Subscribers' => $baseDir . '/inc/classes/ServiceProvider/class-updater-subscribers.php',
     'WP_Rocket\\Subscriber\\Admin\\Database\\Optimization_Subscriber' => $baseDir . '/inc/classes/subscriber/admin/Database/class-optimization-subscriber.php',
     'WP_Rocket\\Subscriber\\Admin\\Deactivation\\Deactivation_Intent_Subscriber' => $baseDir . '/inc/classes/subscriber/admin/Deactivation/class-deactivation-intent-subscriber.php',
     'WP_Rocket\\Subscriber\\Admin\\Settings\\Beacon_Subscriber' => $baseDir . '/inc/classes/subscriber/admin/Settings/class-beacon-subscriber.php',
@@ -94,6 +95,9 @@ return array(
     'WP_Rocket\\Subscriber\\Optimization\\Minify_JS_Subscriber' => $baseDir . '/inc/classes/subscriber/Optimization/class-minify-js-subscriber.php',
     'WP_Rocket\\Subscriber\\Optimization\\Minify_Subscriber' => $baseDir . '/inc/classes/subscriber/Optimization/class-abstract-minify-subscriber.php',
     'WP_Rocket\\Subscriber\\Optimization\\Remove_Query_String_Subscriber' => $baseDir . '/inc/classes/subscriber/Optimization/class-remove-query-string-subscriber.php',
+    'WP_Rocket\\Subscriber\\Plugin\\Information_Subscriber' => $baseDir . '/inc/classes/subscriber/Plugin/class-information-subscriber.php',
+    'WP_Rocket\\Subscriber\\Plugin\\Updater_Api_Common_Subscriber' => $baseDir . '/inc/classes/subscriber/Plugin/class-updater-api-common-subscriber.php',
+    'WP_Rocket\\Subscriber\\Plugin\\Updater_Subscriber' => $baseDir . '/inc/classes/subscriber/Plugin/class-updater-subscriber.php',
     'WP_Rocket\\Subscriber\\Preload\\Partial_Preload_Subscriber' => $baseDir . '/inc/classes/subscriber/preload/class-partial-preload-subscriber.php',
     'WP_Rocket\\Subscriber\\Preload\\Preload_Subscriber' => $baseDir . '/inc/classes/subscriber/preload/class-preload-subscriber.php',
     'WP_Rocket\\Subscriber\\Preload\\Sitemap_Preload_Subscriber' => $baseDir . '/inc/classes/subscriber/preload/class-sitemap-preload-subscriber.php',
@@ -109,4 +113,5 @@ return array(
     'WP_Rocket\\Subscriber\\Tools\\Cache_Dir_Size_Check_Subscriber' => $baseDir . '/inc/classes/subscriber/Tools/class-cache-dir-size-check-subscriber.php',
     'WP_Rocket\\Traits\\Config_Updater' => $baseDir . '/inc/classes/traits/trait-config-updater.php',
     'WP_Rocket\\Traits\\Memoize' => $baseDir . '/inc/classes/traits/trait-memoize.php',
+    'WP_Rocket\\Traits\\Updater_Api_Tools' => $baseDir . '/inc/classes/traits/trait-updater-api-tools.php',
 );

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a
+class ComposerStaticInit0cf0cc98e23cb80e70d235a5f4bf7cf4
 {
     public static $prefixLengthsPsr4 = array (
         'R' => 
@@ -150,6 +150,7 @@ class ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a
         'WP_Rocket\\ServiceProvider\\Preload_Subscribers' => __DIR__ . '/../..' . '/inc/classes/ServiceProvider/class-preload-subscribers.php',
         'WP_Rocket\\ServiceProvider\\Settings' => __DIR__ . '/../..' . '/inc/classes/ServiceProvider/class-settings.php',
         'WP_Rocket\\ServiceProvider\\Third_Party_Subscribers' => __DIR__ . '/../..' . '/inc/classes/ServiceProvider/class-third-party-subscribers.php',
+        'WP_Rocket\\ServiceProvider\\Updater_Subscribers' => __DIR__ . '/../..' . '/inc/classes/ServiceProvider/class-updater-subscribers.php',
         'WP_Rocket\\Subscriber\\Admin\\Database\\Optimization_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/admin/Database/class-optimization-subscriber.php',
         'WP_Rocket\\Subscriber\\Admin\\Deactivation\\Deactivation_Intent_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/admin/Deactivation/class-deactivation-intent-subscriber.php',
         'WP_Rocket\\Subscriber\\Admin\\Settings\\Beacon_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/admin/Settings/class-beacon-subscriber.php',
@@ -169,6 +170,9 @@ class ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a
         'WP_Rocket\\Subscriber\\Optimization\\Minify_JS_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Optimization/class-minify-js-subscriber.php',
         'WP_Rocket\\Subscriber\\Optimization\\Minify_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Optimization/class-abstract-minify-subscriber.php',
         'WP_Rocket\\Subscriber\\Optimization\\Remove_Query_String_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Optimization/class-remove-query-string-subscriber.php',
+        'WP_Rocket\\Subscriber\\Plugin\\Information_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Plugin/class-information-subscriber.php',
+        'WP_Rocket\\Subscriber\\Plugin\\Updater_Api_Common_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Plugin/class-updater-api-common-subscriber.php',
+        'WP_Rocket\\Subscriber\\Plugin\\Updater_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Plugin/class-updater-subscriber.php',
         'WP_Rocket\\Subscriber\\Preload\\Partial_Preload_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/preload/class-partial-preload-subscriber.php',
         'WP_Rocket\\Subscriber\\Preload\\Preload_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/preload/class-preload-subscriber.php',
         'WP_Rocket\\Subscriber\\Preload\\Sitemap_Preload_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/preload/class-sitemap-preload-subscriber.php',
@@ -184,14 +188,15 @@ class ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a
         'WP_Rocket\\Subscriber\\Tools\\Cache_Dir_Size_Check_Subscriber' => __DIR__ . '/../..' . '/inc/classes/subscriber/Tools/class-cache-dir-size-check-subscriber.php',
         'WP_Rocket\\Traits\\Config_Updater' => __DIR__ . '/../..' . '/inc/classes/traits/trait-config-updater.php',
         'WP_Rocket\\Traits\\Memoize' => __DIR__ . '/../..' . '/inc/classes/traits/trait-memoize.php',
+        'WP_Rocket\\Traits\\Updater_Api_Tools' => __DIR__ . '/../..' . '/inc/classes/traits/trait-updater-api-tools.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc52c1e78ffc682e2681a333d1e1eac6a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0cf0cc98e23cb80e70d235a5f4bf7cf4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0cf0cc98e23cb80e70d235a5f4bf7cf4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit0cf0cc98e23cb80e70d235a5f4bf7cf4::$classMap;
 
         }, null, ClassLoader::class);
     }
